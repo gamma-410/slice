@@ -1,10 +1,12 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 )
 
 func main() {
-	name := "slice"
+	flag.Parse()
+	name := flag.Arg(0)
 	fmt.Println("Hello", name)
 }
